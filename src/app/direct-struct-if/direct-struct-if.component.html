@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="mot_magic">
+<h1 *ngIf="mot_magic !== 'Abracadabra'; else badRequest">Ha haha Ha haha!</h1>
+<ng-template #badRequest>
+    <h1>"Vous n'avez pas dis le mot magique!"</h1>
+</ng-template>

@@ -1,0 +1,8 @@
+<p> Your current currency is : {{currency}}</p>
+
+<select #chooseCurrency (change)="setCurrency(chooseCurrency)">
+    <option>Choose a Currency</option>
+    <option value="EUR">Euro €</option>
+    <option value="USD">American Dollar $</option>
+    <option value="LUK">£</option>
+</select>

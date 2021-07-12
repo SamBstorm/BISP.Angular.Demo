@@ -1,0 +1,14 @@
+<h1>My shop</h1>
+<div>
+    <label>Catégorie : </label>
+    <input type="text" [(ngModel)] = "categorie" value="Fruit">
+</div>
+<div *ngIf="filteredList.length > 0; else zeroArticle" >
+    <div *ngFor="let article of filteredList">
+        {{article.Name}}
+    </div>
+</div>
+
+<ng-template #zeroArticle>
+    <h4>Vous n'avez aucune correspondance...</h4>
+</ng-template>

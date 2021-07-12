@@ -1,0 +1,14 @@
+<h1>Quel est la meilleure pizza au monde?</h1>
+<label>Quattre fromages</label><input type="radio" value="4Fromages" name="pizza" [(ngModel)]="choix">
+<label>Chorizo</label><input type="radio" value="Chorizo" name="pizza" [(ngModel)]="choix">
+<label>Hawaii</label><input type="radio" value="Hawaii" name="pizza" [(ngModel)]="choix">
+
+
+<div [ngSwitch]="choix">
+    <p *ngSwitchCase="'4Fromages'">Vous avez de bon goûts!</p>
+    <p *ngSwitchCase="'Chorizo'">Personnes n'est parfait!</p>
+    <p *ngSwitchCase="'Hawaii'">Vous n'avez pas honte!</p>
+    <p *ngSwitchDefault>Veuillez faire un choix!</p>
+</div>
+
+

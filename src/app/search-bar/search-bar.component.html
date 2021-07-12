@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="search_input">
+<p #response>{{search_input}}</p>
+<h1>{{response.innerText.length}}</h1>
+<h2>{{response.innerText.substr(0, 4)}}</h2>
